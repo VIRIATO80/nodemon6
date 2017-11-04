@@ -1,0 +1,24 @@
+          <div class="row">
+            <div class="col-md-1" >&nbsp;</div>
+            <div class="col-md-5 filtroOrdenacion izquierda">            
+              <%= __('Mostrar') %>:
+              <select name="limite" id="limite">
+                <option value=""><%= __('Todos') %></option>
+                <option value="5">5 <%= __('resultados') %></option>
+                <option value="10">10 <%= __('resultados') %></option>
+              </select>
+            </div>          
+            <div class="col-md-5 filtroOrdenacion">
+              <%= __('Orden') %>:
+              <select name="orden" id="orden">
+                <option value=""></option>
+                <option value="nombre"><%= __('De A - Z') %></option>
+                <option value="-nombre"><%= __('De Z - A') %></option>
+                <option value="precio"><%= __('Precio Ascendente') %></option>
+                <option value="-precio"><%= __('Precio Descendente') %></option>
+                <option value="-venta"<>%= __('Primero Ventas') %></option>
+                <option value="venta"><%= __('Primero Búsquedas') %></option>
+              </select>    
+            </div>
+            <div class="col-md-1" >&nbsp;</div>
+          </div>

@@ -1,0 +1,62 @@
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+.venta{
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    background-color: lightseagreen;
+}
+
+.busqueda{
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    background-color: lightsalmon;
+}
+
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: white;
+  background-color: #5bc0de;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+
+.bordeAzul{
+    border: 1px solid #5bc0de;
+    padding: 5px;
+}
+
+.centrada{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.filtroOrdenacion{
+    text-align: right;
+    margin: 35px 30px 10px 0;
+    padding: 5px;
+    background-color: #5bc0de;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.izquierda{ 
+    text-align: left;
+}

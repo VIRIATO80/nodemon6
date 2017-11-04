@@ -1,0 +1,50 @@
+[
+    {
+    "nombre": "Bicicleta",
+    "descripcion": "Una magnífica bicicleta de montaña apenas sin uso.",
+    "venta": true,
+    "precio": 230,
+    "foto": "/images/bici.jpg",
+    "tags": [ "lifestyle", "motor"]
+    },
+    {
+    "nombre": "IPhone",
+    "descripcion": "Busco un Iphone a buen precio que no tenga la pantalla demasiado arañada.",    
+    "venta": false,
+    "precio": 50.00,
+    "foto": "/images/iphone.jpg",
+    "tags": [ "lifestyle", "mobile"]
+    },
+    {
+    "nombre": "Princesa Peach",
+    "descripcion": "Una réplica de este famoso personaje de Super Mario. Ideal para coleccionistas.",
+    "venta": true,
+    "precio": 25,
+    "foto": "/images/princesaPeach.gif",
+    "tags": [ "lifestyle"]
+    },
+    {
+    "nombre": "Juego de herramientas",
+    "descripcion": "Por cese de empresa, vendo este pack de herramientas. Urge.",    
+    "venta": true,
+    "precio": 45,
+    "foto": "/images/herramientas.jpg",
+    "tags": [ "work"]
+    },
+    {
+    "nombre": "Maquinilla de afeitar",
+    "descripcion": "Busco una maquinilla eléctrica para peluquería de caballero.",
+    "venta": false,
+    "precio": 65,
+    "foto": "/images/maquinilla.jpg",
+    "tags": [ "lifestyle", "work"]
+    },
+    {
+    "nombre": "Cargadores Samsung",
+    "descripcion": "Se venden cargadores de teléfono Samsung para todas sus versiones. ¡Pregúntame por la tuya!",    
+    "venta": true,
+    "precio": 15,
+    "foto": "/images/samsung.jpg",
+    "tags": [ "lifestyle", "mobile"]
+    }
+]

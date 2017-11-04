@@ -1,0 +1,88 @@
+<% include header %>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+            <h4 class="my-4"><%= __('Crear anuncio') %></h1>
+        </div>
+        <div class="col-lg-9">
+          <div class="row">
+            &nbsp;
+          </div>
+          <!--Formulario de alta-->
+          <div class="row" id="listadoAnuncios">
+                 <form method="POST" action="/add" enctype="multipart/form-data" >
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="nombre"><%= __('Nombre') %>:</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" name="nombre" id="nombre">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="nombre"><%=__('Descripción') %>:</label>
+                        </div>
+                        <div class="col-md-8">
+                            <textarea  name="descripcion" id="descripcion" rows="5" cols="40"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for=""><%=__('Foto') %>:</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="file" name="foto" id="foto" accept="image/gif, image/png, image/jpeg" >
+                        </div>
+                    </div>                                          
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="venta"><%=__('Modalidad') %>:</label>
+                        </div>
+                        <div class="col-md-8" >
+                            <select name="venta" id="venta">
+                                <option value="true"><%=__('Vendo') %></option>
+                                <option value="false"><%=__('Busco') %></option>
+                            </select> 
+                        </div>      
+                    </div>  
+                    <div class="row">   
+                         <div class="col-md-4">
+                            <label><%=__('Categoría') %>:</label>
+                         </div>
+                         <div class="col-md-8 bordeAzul" >                           
+                            <% Tags.forEach(function(tag) { %>
+                                <div class="label label-primary">
+                                    <input type="checkbox" id="<%=tag.nombre%>" name="tags" value="<%=tag.nombre%>">
+                                    <label for="<%=tag.nombre%>" ><%=tag.nombre%></label>
+                                </div>
+                                <br/>
+                            <%});%>                          
+                         </div>
+                    </div>
+                    <div class="row">  
+                            <div class="col-md-4">
+                                <label for="tipo"><%=__('Precio') %>:</label>
+                            </div>
+                            <div class="col-md-8" >
+                                <input id="precio" name="precio" type="number" min="10" step="5" >
+                            </div>
+                    </div>
+                    <div class="row">  
+                        <div class="col-md-12 centrada" >
+                            <input type="submit" value="<%=__('Enviar') %>" class="btn-primary" />
+                        </div>
+                    </div>
+                </form>
+         </div>
+          <!-- Fin de formulario -->
+        </div>
+        <!-- /.col-lg-9 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+<% include footer %>

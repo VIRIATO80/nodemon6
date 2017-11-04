@@ -1,0 +1,18 @@
+[
+    {
+    "nombre": "work",
+    "descripcion": "Productos relacionados con el trabajo."
+    },
+    {
+    "nombre": "lifestyle",
+    "descripcion": "Productos cotidianos del día a día."
+    },
+    {
+    "nombre": "motor",
+    "descripcion": "Todo sobre el mundo del motor."
+    },
+    {
+    "nombre": "mobile",
+    "descripcion": "Móviles y accesorios de telefonía"
+    }
+]

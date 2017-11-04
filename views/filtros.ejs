@@ -1,0 +1,26 @@
+<div class="col-lg-3">
+    <h4 class="my-4"><%= __('Busca y encuentra') %></h1>
+    <div class="list-group bordeAzul">
+            <label for="name"><%= __('Por nombre') %>:</label>
+            <input type="text" name="name" id="name">
+            <label for="tipo"><%= __('Modalidad') %>:</label>
+            <select name="modalidad" id="modalidad">
+                <option value=""><%= __('Todos') %></option>
+                <option value="V"><%= __('Vendo') %></option>
+                <option value="B"><%= __('Busco') %></option>
+            </select>            
+            <label><%= __('Por categoría') %>:</label>
+            <ul class="tags">
+                <% Tags.forEach(function(tag) { %>
+                    <div class="label label-primary">
+                        <input type="checkbox" name="tagFiltro" id="tagFiltro" class="checko" value="<%=tag.nombre%>">
+                        <label for="<%=tag.nombre%>" ><%=tag.nombre%></label>
+                    </div>
+                    <br/>
+                <%});%>
+            </ul>
+            <label for="tipo"><%= __('Por precio') %>:</label>
+                <input id="slider1" type="range" min="0" max="3" value="0">
+                <span id="mensajeSlider"><%= __('Desde') %> 10€</span>
+    </div>
+</div>

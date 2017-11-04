@@ -1,0 +1,52 @@
+<% include header %>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <% include filtros %>
+
+        <div class="col-lg-9">
+          <!--Filtro de ordenación y paginación-->
+          <% include filtroSuperior %>
+          <!--Listado de productos-->
+          <div class="row" id="listadoAnuncios">
+            <% Anuncios.forEach(function(anuncio) { %>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                  <% if(anuncio.venta){%>
+                    <div class="card card-header venta"><%= __('Vendo') %></div>
+                  <%}else{%>
+                    <div class="card card-header busqueda"><%= __('Busco') %></div>
+                   <%}%> 
+                  <a href="#"><img class="card-img-top" src='<%=anuncio.foto%>' ></a>
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      <a href="#"><%=anuncio.nombre%></a>
+                    </h4>
+                    <h5><%=anuncio.precio%> €</h5>
+                    <p class="card-text"><%=anuncio.descripcion%></p>
+                  </div>
+                  <div class="card-footer">
+                    <% for (var i = 0; i < anuncio.tags.length; i++) { %>
+                      <span class="label label-primary"><%= anuncio.tags[i] %></span>
+                    <%}%>
+                  </div>
+                </div>
+              </div>
+            <% }); %>
+         </div>
+          <!-- Fin de listado -->
+        </div>
+        <!-- /.col-lg-9 -->
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+
+
+<% include footer %>
