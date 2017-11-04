@@ -105,7 +105,7 @@ $('#limite').change(function() {
 //Llamada genérica a Ajax con el filtro global
 function llamadaAjax(){
     $.ajax({
-        url : '/api/busqueda',
+        url : '/busqueda',
         data : filtro,
         type : 'GET',
         // el tipo de información que se espera de respuesta

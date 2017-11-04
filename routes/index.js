@@ -9,6 +9,9 @@ const { catchErrors } = require('../handlers/errorHandlers');
 //Load home page
 router.get('/', catchErrors(webController.getListadoAnuncios));
 
+//Búsqueda
+router.get('/busqueda', catchErrors(webController.getAnunciosFiltrados));
+
 //Load create form
 router.get('/add', webController.cargarFormularioCreacion);
 
